@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url(/font/BigShouldersDisplay-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca';
+}
+
+#container{
+    display: flex;
+}
+
+#sedans, #suvs, #luxury{
+    width: 300px;
+    height: 500px;
+    padding: 40px 50px;
+}
+
+#sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 7px 0 0 7px;
+}
+
+#suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 7px 7px 0;
+}
+
+h2, p{
+    color: white;
+}
+
+h2{
+    font-size: 36px;
+    font-family: 'Big Shoulders Display';
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+p{
+    font-size: 14px;
+    opacity: 60%;
+    margin-bottom: 8px;
+}
+
+button{
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 13px 30px;
+    border-radius: 50px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+#sedans button{
+    color: hsl(31, 77%, 52%);
+    font-weight: 600;
+}
+
+#suvs button{
+    color: hsl(184, 100%, 22%);
+    font-weight: 600;
+}
+
+#luxury button{
+    color: hsl(179, 100%, 13%);
+    font-weight: 600;
+}
+
+button:hover{
+    border: 2px white solid;
+}
+
+#sedans button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+#suvs button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+
+#luxury button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+}
